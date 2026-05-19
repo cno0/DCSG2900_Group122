@@ -1,6 +1,6 @@
 # MQTT Replay Helper for SIEM Detection Testing
 
-Developed for the DSCG2900 bachelor project, Group 122, by Mohammad Rdwan Alhammod, May 2026.
+Developed for the DSCG2900 bachelor project, Group 122, May 2026.
 
 This repository contains `mqtt_replay.py`, a helper script used for controlled MQTT replay testing in a LoRaWAN backend lab environment. The script captures one MQTT message, stores the original payload, optionally modifies selected JSON fields, and republishes the message to an MQTT broker.
 
