@@ -1,0 +1,16 @@
+[project]
+name = "bridge"
+version = "1.0.0"
+description = "Decodes Gateway Protobuf events and republishes them as JSON to an MQTT broker."
+dependencies = [
+    "paho-mqtt>=2.0,<3.0",
+    "chirpstack-api>=4.7,<5.0",
+    "protobuf>=5.29,<7.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,11 @@
+services:
+  logstash:
+    build: ./logstash # Builds from local Dockerfile
+    container_name: logstash
+    volumes:
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+    restart: unless-stopped
+  bridge:
+    build: ./bridge
+    env_file: .env # Loads configuration
+    restart: unless-stopped
